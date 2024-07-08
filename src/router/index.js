@@ -7,6 +7,7 @@ import Admin from '../components/Admin.vue';
 import Home from '../components/Home.vue';
 import ManageUsers from '../components/ManageUsers.vue';
 import CheckoutUser from '../components/CheckoutUser.vue';
+import Payment from '../components/Payment.vue';
 
 const routes = [
   { path: '/', component: Login },
@@ -20,6 +21,7 @@ const routes = [
       { path: 'admin', component: Admin },
       { path: 'manageusers', component: ManageUsers },
       { path: 'checkoutuser', component: CheckoutUser },
+      { path: 'payment', component: Payment },
     ]
   }
 ];

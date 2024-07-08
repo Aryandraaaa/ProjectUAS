@@ -38,7 +38,7 @@ export default {
       try {
         const success = await store.dispatch('login', credentials);
         if (success) {
-          router.push('/dashboard');
+          router.push('/navbar');
         } else {
           alert('Silahkan Register Dahulu');
         }

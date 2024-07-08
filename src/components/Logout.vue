@@ -1,4 +1,3 @@
-<!-- src/components/Logout.vue -->
 <template>
     <div>
       <h1>Logout</h1>

@@ -1,25 +1,35 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <RouterLink class="navbar-brand" to="/navbar">Home</RouterLink>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <RouterLink class="navbar-brand" to="/navbar" href="#">MarketPlace</RouterLink>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link active" to="/navbar/admin">Admin</RouterLink>
+              <RouterLink class="nav-link active" to="/navbar/admin">All Items</RouterLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <RouterLink class="nav-link active" to="/navbar/manageusers">ManageUsers</RouterLink>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <RouterLink class="nav-link active" to="/navbar/checkoutuser">CheckoutUser</RouterLink>
-            </li>
+            </li> -->
             <li class="nav-item">
               <RouterLink class="nav-link" to="/navbar/payment">Payment</RouterLink>
             </li>
+          </ul>
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <RouterLink class="nav-link" to="/" @click.prevent="logout">Logout</RouterLink>
             </li>
@@ -27,6 +37,7 @@
         </div>
       </div>
     </nav>
+  
     <div class="container mt-4">
       <RouterView />
     </div>

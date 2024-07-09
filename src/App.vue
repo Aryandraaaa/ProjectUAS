@@ -43,12 +43,18 @@ const isAuthenticated = computed(() => store.getters.isAuthenticated);
     </div>
   </header>
   <RouterView />
+  <Footer />
 </template>
 
 <script>
 import { useStore } from 'vuex';
+import Footer from "@/components/Footer.vue";
 
 export default {
+  components: {
+    Footer
+    
+  },
   setup() {
     const store = useStore();
     const logout = () => {
